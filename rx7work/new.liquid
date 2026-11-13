@@ -1,0 +1,162 @@
+{% assign tees = section.settings.tees %}
+{% assign gear = section.settings.gear %}
+<section class="kr">
+  <div class="kr-hero">
+    <div class="kr-hero__copy">
+      <p class="kr-kicker"><span></span> DROP 01 / PACIFIC NORTHWEST</p>
+      <h1>Built in the<br><em>garage.</em></h1>
+      <p class="kr-intro">Original motorsport tees and garage gear for the people who keep old cars on the road.</p>
+      <div class="kr-actions">
+        <a class="kr-button" href="{% if tees != blank %}{{ tees.url }}{% else %}#kojin-tees{% endif %}">Explore the tees <span aria-hidden="true">↘</span></a>
+        <a class="kr-button kr-button--quiet" href="{% if gear != blank %}{{ gear.url }}{% else %}#kojin-gear{% endif %}">Garage gear <span aria-hidden="true">↘</span></a>
+        <a class="kr-button kr-button--quiet" href="/pages/mechanic">Book service <span aria-hidden="true">↘</span></a>
+      </div>
+    </div>
+    <div class="kr-art" aria-hidden="true">
+      <svg viewBox="0 0 760 535" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="kr-grid-{{ section.id }}" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" stroke="#e1d7c2" stroke-opacity=".13"/></pattern>
+          <pattern id="kr-check-{{ section.id }}" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M0 0h15v15H0zM15 15h15v15H15z" fill="#f2e9d7"/></pattern>
+        </defs>
+        <path d="M0 0h760v535H0z" fill="url(#kr-grid-{{ section.id }})"/>
+        <circle cx="448" cy="236" r="159" fill="#f55738"/>
+        <path d="M285 278h329m-325 18h319m-311 18h303m-290 18h278m-257 18h236" stroke="#1b1b1c" stroke-width="9"/>
+        <path d="M92 404h582M57 418h643M27 434h695M15 450h735" stroke="#eee4d3" opacity=".23"/>
+        <g class="kr-rx7">
+          <path d="M106 384C102 368 108 358 122 353C150 344 176 330 206 318C224 311 248 310 266 314C290 318 314 318 340 314C370 282 402 260 434 252C468 245 504 250 532 263C562 277 584 290 600 298C626 295 646 295 666 300C690 306 702 324 702 344C702 366 694 386 682 400C676 406 668 409 658 410L628 410A56 56 0 0 0 532 410L276 412A56 56 0 0 0 180 412L134 414C116 412 108 400 106 384Z" fill="#181819" stroke="#f2e9d7" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M354 315C382 286 408 266 438 259C470 253 504 257 530 269C552 279 570 290 584 298C540 300 470 306 354 315Z" fill="#333031" stroke="#f2e9d7" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M474 257l4 48" stroke="#f2e9d7" stroke-width="4"/>
+          <path d="M214 338C320 332 460 324 566 316C620 312 668 314 698 330M292 401 526 398M350 317C346 350 348 380 354 405M470 308C476 340 476 376 472 404" stroke="#f2e9d7" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M130 352C150 344 172 335 194 327M110 375C120 370 136 369 152 372M116 398 164 396" stroke="#f2e9d7" stroke-width="3" stroke-linecap="round"/>
+          <path d="M488 348C506 344 524 346 536 353L525 367C513 361 499 359 483 361Z" fill="#0f0f10" stroke="#f2e9d7" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M494 352l34 4M490 356l32 6" stroke="#f2e9d7" stroke-width="2"/>
+          <path d="M360 302c8-8 22-8 26-2l-4 10h-20z" fill="#181819" stroke="#f2e9d7" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M628 296l2-9M676 302l3-13" stroke="#f2e9d7" stroke-width="3"/>
+          <path d="M614 286C642 282 676 283 700 289L698 296C676 291 644 290 616 292Z" fill="#181819" stroke="#f2e9d7" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M290 357 466 346 464 355 288 366Z" fill="#f55738"/>
+          <path d="M694 336l7 2v15l-8-2z" fill="#f55738"/>
+        </g>
+        <circle cx="228" cy="381" r="48" fill="#181819" stroke="#f2e9d7" stroke-width="5"/><circle cx="228" cy="381" r="29" stroke="#f2e9d7" stroke-width="3"/>
+        <circle cx="580" cy="381" r="48" fill="#181819" stroke="#f2e9d7" stroke-width="5"/><circle cx="580" cy="381" r="29" stroke="#f2e9d7" stroke-width="3"/>
+        <path d="M228 354v54m-27-27h54m325-27v54m-27-27h54" stroke="#f55738" stroke-width="3"/>
+        <path d="M48 63h90v30H48z" fill="url(#kr-check-{{ section.id }})"/>
+        <path d="M690 52h22v22m0 376v22h-22M70 472H48v-22" stroke="#f2e9d7" stroke-width="2" opacity=".7"/>
+        <text x="48" y="504" fill="#f2e9d7" font-family="monospace" font-size="15" letter-spacing="2">KOJIN RACERS / GARAGE DIVISION</text>
+        <text x="710" y="504" text-anchor="end" fill="#f55738" font-family="monospace" font-size="15" letter-spacing="2">FIG. 01</text>
+      </svg>
+    </div>
+  </div>
+  <div class="kr-track" aria-hidden="true"><span>KOJIN RACERS</span><span>GRASSROOTS MOTORSPORT</span><span>PACIFIC NORTHWEST</span></div>
+</section>
+
+{% stylesheet %}
+  .kr { background:#181819;color:#f2e9d7; }
+  .kr a:focus-visible { outline:2px solid currentColor;outline-offset:4px; }
+  .kr-hero { margin:auto;max-width:1520px;padding:clamp(32px,6vw,90px) clamp(20px,5vw,80px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);align-items:center;gap:clamp(24px,3vw,55px); }
+  .kr h1,.kr h2,.kr h3 { color:inherit;margin:0; }
+  .kr h1,.kr h2 { font-family:var(--font-heading--family),sans-serif;font-weight:900;letter-spacing:-.065em;line-height:.93; }
+  .kr h1 { font-size:clamp(60px,7.2vw,112px); }
+  .kr h1 em { color:#ff694c;font-style:italic; }
+  .kr h2 { font-size:clamp(42px,6.3vw,90px); }
+  .kr-kicker { font:700 12px/1.5 monospace;letter-spacing:.14em;margin:0 0 24px; }
+  .kr-kicker span { display:inline-block;width:18px;height:6px;background:#f55738;margin-right:8px;transform:skewX(-24deg);vertical-align:2px; }
+  .kr-intro { color:#dfd5c6;font-size:clamp(16px,1.8vw,20px);max-width:34ch;margin:28px 0; }
+  .kr-actions { display:flex;flex-wrap:wrap;gap:10px; }
+  .kr-button { display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 16px;background:#f55738;color:#171717;border:1px solid #f55738;font-weight:800;text-decoration:none;white-space:nowrap; }
+  .kr-button:hover { background:#f2e9d7;border-color:#f2e9d7;color:#171717; }
+  .kr-button--quiet { background:transparent;color:#f2e9d7;border-color:#70665d; }
+  .kr-art svg { display:block;width:100%;height:auto; }
+  .kr-track { background:#f55738;color:#171717;display:flex;flex-wrap:wrap;justify-content:space-evenly;gap:8px 20px;padding:13px 16px;font:800 12px/1.4 monospace;letter-spacing:.12em;text-align:center; }
+  .kr-body { max-width:1520px;margin:auto;padding:clamp(34px,6vw,90px) clamp(20px,5vw,80px); }
+  .kr-group,.kr-gear { scroll-margin-top:110px; }
+  .kr-group__head { display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px; }
+  .kr-text-link { color:#f2e9d7;text-underline-offset:4px; }
+  .kr-note { color:#d7cbbd;margin:15px 0 0; }
+  .kr-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px; }
+  .kr-card { display:block;background:#232325;color:#f2e9d7;border:1px solid #48413d;text-decoration:none; }
+  a.kr-card:hover { border-color:#f55738;color:#fff; }
+  .kr-card__image { display:block;width:100%;height:auto;aspect-ratio:5/6;object-fit:cover; }
+  .kr-card__info { display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;padding:13px; }
+  .kr-card__info h3 { font-size:17px;letter-spacing:-.025em; }
+  .kr-card__info span,.kr-gear__status { font:700 12px/1.4 monospace;color:#ff836e; }
+  .kr-gear { border:1px solid #51483f;padding:clamp(18px,4vw,50px);margin-top:clamp(32px,6vw,80px);display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap; }
+  @media (max-width: 749px) {
+    .kr-hero { grid-template-columns:1fr; }
+    .kr-grid { grid-template-columns:1fr;gap:12px; }
+    .kr-track { letter-spacing:.03em; }
+  }
+
+  /* Kojin homepage mobile layout fixes */
+  @media screen and (max-width: 749px) {
+    /* Center the third hero button under the first two on phones. */
+    .kr-actions a:last-child {
+      margin-inline: auto;
+    }
+
+    .kr-hero {
+      padding-block-start: 24px;
+      padding-block-end: 20px;
+      padding-inline: 20px;
+      gap: 16px;
+    }
+
+    [id*="__kojin_tees"] .section.spacing-style,
+    [id*="__kojin_gear"] .section.spacing-style {
+      padding-block-start: 24px;
+      padding-block-end: 24px;
+    }
+
+    /* Show only the first two featured tees on mobile; desktop stays at 4. */
+    [id*="__kojin_tees"] .resource-list__item:nth-child(n+3) {
+      display: none;
+    }
+
+    /* Compact mechanic block: contained ad + heading/buttons immediately under it. */
+    [id*="__kojin_mechanic"] .media-with-content {
+      padding-block-start: 20px;
+      padding-block-end: 20px;
+      row-gap: 0;
+    }
+
+    [id*="__kojin_mechanic"] .media-block {
+      max-height: 42vh;
+      overflow: hidden;
+    }
+
+    [id*="__kojin_mechanic"] .media-block__media-link,
+    [id*="__kojin_mechanic"] .media-block__media {
+      display: block;
+      width: 100%;
+      max-height: 42vh;
+      height: auto;
+      object-fit: contain;
+      object-position: center center;
+    }
+
+    [id*="__kojin_mechanic"] .media-with-content__content > .group-block-content {
+      padding-block-start: 16px;
+      padding-block-end: 16px;
+      padding-inline: 16px;
+      gap: 12px;
+    }
+  }
+
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Kojin Racers homepage",
+  "settings": [
+    {"type":"collection","id":"tees","label":"T-shirt collection"},
+    {"type":"collection","id":"gear","label":"Garage gear collection"}
+  ],
+  "blocks": [
+    {"type":"mockup","name":"Shirt preview","settings":[
+      {"type":"text","id":"title","label":"Shirt name"},
+      {"type":"image_picker","id":"mockup","label":"Concept mockup"}
+    ]}
+  ],
+  "max_blocks": 6,
+  "presets": [{"name":"Kojin Racers homepage"}]
+}
+{% endschema %}

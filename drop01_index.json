@@ -1,0 +1,157 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "kojin_drop": {
+      "type": "kojin-drop",
+      "blocks": {
+        "tee_1": {
+          "type": "mockup",
+          "settings": {
+            "title": "Team Wordmark Tee",
+            "mockup": "shopify://shop_images/kojin-racers-kr-01.jpg"
+          }
+        },
+        "tee_2": {
+          "type": "mockup",
+          "settings": {
+            "title": "Night Session Tee",
+            "mockup": "shopify://shop_images/kojin-racers-kr-02.jpg"
+          }
+        },
+        "tee_3": {
+          "type": "mockup",
+          "settings": {
+            "title": "Garage Crew Tee",
+            "mockup": "shopify://shop_images/kojin-racers-kr-03.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "tee_1",
+        "tee_2",
+        "tee_3"
+      ],
+      "settings": {
+        "tees": "kojin-racers-tees",
+        "gear": "garage-gear"
+      }
+    },
+    "kojin_crew_signup": {
+      "type": "section",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "Heading",
+          "settings": {
+            "text": "<h2>Join the Kojin Crew \u2014 10% off your first order</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "blurb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Drop alerts, garage notes, and code <strong>WELCOME10</strong> for 10% off your first order. One use per customer.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "email_signup": {
+          "type": "email-signup",
+          "settings": {
+            "width": "custom",
+            "custom_width": 50,
+            "heading": "",
+            "heading_preset": "h3",
+            "border_style": "all",
+            "input_style": "default",
+            "style_class": "button",
+            "display_type": "text",
+            "label": "Join the crew",
+            "integrated_button": true,
+            "button_type_preset": "paragraph",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "blurb",
+        "email_signup"
+      ],
+      "name": "Kojin Crew signup",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 64
+      }
+    }
+  },
+  "order": [
+    "kojin_drop",
+    "kojin_crew_signup"
+  ]
+}

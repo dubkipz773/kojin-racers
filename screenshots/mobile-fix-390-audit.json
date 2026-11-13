@@ -1,0 +1,109 @@
+{
+  "docH": 3198,
+  "innerH": 844,
+  "innerW": 390,
+  "sections": [
+    {
+      "id": "sections--27985648517156__header_announcements_9jGBFp",
+      "top": 0,
+      "h": 43,
+      "bottom": 43
+    },
+    {
+      "id": "sections--27985648517156__header_section",
+      "top": 43,
+      "h": 60,
+      "bottom": 103
+    },
+    {
+      "id": "template--27985654415396__kojin_drop",
+      "top": 103,
+      "h": 683,
+      "bottom": 786
+    },
+    {
+      "id": "template--27985654415396__kojin_tees",
+      "top": 786,
+      "h": 373,
+      "bottom": 1159
+    },
+    {
+      "id": "template--27985654415396__kojin_mechanic",
+      "top": 1159,
+      "h": 725,
+      "bottom": 1884
+    },
+    {
+      "id": "template--27985654415396__kojin_gear",
+      "top": 1884,
+      "h": 663,
+      "bottom": 2546
+    },
+    {
+      "id": "sections--27985648386084__kojin_footer_signup",
+      "top": 2546,
+      "h": 539,
+      "bottom": 3085
+    },
+    {
+      "id": "sections--27985648386084__footer_utilities_jLGE8U",
+      "top": 3085,
+      "h": 113,
+      "bottom": 3198
+    },
+    {
+      "id": "cart-drawer-section",
+      "top": 3198,
+      "h": 0,
+      "bottom": 3198
+    }
+  ],
+  "gaps": [],
+  "large": [
+    {
+      "id": "shopify-section-template--27985654415396__kojin_mechanic",
+      "cls": "shopify-section",
+      "h": 725,
+      "top": 1159
+    },
+    {
+      "id": "",
+      "cls": "section-background color-custom-template--27985654415396__kojin_mechanic",
+      "h": 725,
+      "top": 1159
+    },
+    {
+      "id": "",
+      "cls": "section section--page-width disable-section-top-offset media-with-content color-",
+      "h": 725,
+      "top": 1159
+    }
+  ],
+  "joinText": 1,
+  "welcomeText": 1,
+  "joinHtml": 1,
+  "welcomeHtml": 1,
+  "crewSignupSection": false,
+  "footerSignupSection": true,
+  "teeItemCount": 4,
+  "visibleTeeCount": 2,
+  "teeNames": [
+    "Ghost Streets Katakana Tee $28.00",
+    "Speed Identity Tee $30.00"
+  ],
+  "shopAllTees": true,
+  "mechH": 725,
+  "mechImgH": 354,
+  "mechImgMaxH": "354.48px",
+  "mechImgFit": "contain",
+  "hrefs": [
+    "https://kojinracers.myshopify.com/pages/mechanic",
+    "https://kojinracers.myshopify.com/pages/mechanic",
+    "sms:+12066737672"
+  ],
+  "footerH": 539,
+  "footerText": "Join the Kojin Crew — 10% off your first order Drop alerts and garage notes. Use code WELCOME10 on your first order (one use per customer). Email Join the crew Footer menu About Contact Refund policy Shipping policy Privacy Terms Search",
+  "hasBook": true,
+  "hasTextUs": true,
+  "hasMechanicHeading": true
+}

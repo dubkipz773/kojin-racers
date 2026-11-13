@@ -1,0 +1,63 @@
+:root {
+  --bg: #0f1419;
+  --panel: #1a222d;
+  --text: #e8eef7;
+  --muted: #9aabbf;
+  --accent: #3d9cf0;
+  --ok: #3ecf8e;
+  --crit: #ff5c5c;
+  --high: #ffb020;
+  --norm: #6b8cae;
+  --border: #2a3545;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  min-height: 100vh; display: flex; flex-direction: column;
+}
+.top {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 1.5rem; border-bottom: 1px solid var(--border); gap: 1rem; flex-wrap: wrap;
+}
+.top h1 { margin: 0; font-size: 1.35rem; }
+.tag { margin: 0.25rem 0 0; color: var(--muted); font-size: 0.9rem; }
+nav { display: flex; gap: 0.5rem; }
+.nav, button {
+  background: var(--panel); color: var(--text); border: 1px solid var(--border);
+  border-radius: 8px; padding: 0.45rem 0.85rem; cursor: pointer;
+}
+.nav.active, button.primary { background: var(--accent); border-color: var(--accent); color: #061018; font-weight: 600; }
+main { flex: 1; padding: 1.25rem; max-width: 960px; width: 100%; margin: 0 auto; }
+.panel {
+  background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+  padding: 1.1rem 1.25rem; margin-bottom: 1rem;
+}
+label { display: block; margin: 0.75rem 0 0.35rem; color: var(--muted); font-size: 0.85rem; }
+textarea, select {
+  width: 100%; background: #0d1218; color: var(--text); border: 1px solid var(--border);
+  border-radius: 8px; padding: 0.65rem; font: inherit;
+}
+.row { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-top: 0.75rem; }
+.row.between { justify-content: space-between; }
+.hint, .status { color: var(--muted); font-size: 0.85rem; }
+.urgency-chip {
+  display: inline-block; padding: 0.35rem 0.7rem; border-radius: 999px;
+  font-weight: 700; font-size: 0.8rem; margin-bottom: 0.75rem;
+}
+.urgency-chip.crit { background: color-mix(in srgb, var(--crit) 25%, transparent); color: var(--crit); }
+.urgency-chip.high { background: color-mix(in srgb, var(--high) 25%, transparent); color: var(--high); }
+.urgency-chip.norm { background: color-mix(in srgb, var(--norm) 25%, transparent); color: #c5d6e8; }
+.fields { display: grid; grid-template-columns: 140px 1fr; gap: 0.35rem 0.75rem; }
+.fields dt { color: var(--muted); }
+.fields dd { margin: 0; }
+.leads-list { display: flex; flex-direction: column; gap: 0.65rem; }
+.lead-card {
+  border: 1px solid var(--border); border-radius: 10px; padding: 0.85rem;
+  cursor: pointer; background: #121821;
+}
+.lead-card:hover { border-color: var(--accent); }
+.lead-card h3 { margin: 0 0 0.25rem; font-size: 1rem; }
+.meta { color: var(--muted); font-size: 0.8rem; }
+.prose ul { line-height: 1.5; }
+footer { padding: 0.75rem 1.5rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); }

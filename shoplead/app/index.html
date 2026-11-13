@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShopLead AI</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>ShopLead AI</h1>
+      <p class="tag">Human-gated lead triage for indie shops — drafts never auto-send</p>
+    </div>
+    <nav>
+      <button type="button" data-view="inbox" class="nav active">Inbox</button>
+      <button type="button" data-view="leads" class="nav">Leads</button>
+      <button type="button" data-view="rules" class="nav">Rules</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="view-inbox" class="view">
+      <div class="panel">
+        <h2>Paste inbound message</h2>
+        <label>Source
+          <select id="source">
+            <option>SMS</option>
+            <option>Facebook</option>
+            <option>Web</option>
+            <option>Voicemail</option>
+          </select>
+        </label>
+        <textarea id="raw" rows="8" placeholder="Paste SMS / Facebook / web / voicemail transcript…"></textarea>
+        <div class="row">
+          <button type="button" id="analyze" class="primary">Extract + draft</button>
+          <button type="button" id="clear">Clear</button>
+        </div>
+        <p class="hint">Nothing is sent. Output is a local draft for shop review.</p>
+      </div>
+      <div class="panel" id="result-panel" hidden>
+        <div class="urgency-chip" id="urgency-chip"></div>
+        <dl class="fields" id="fields"></dl>
+        <label>Follow-up draft (editable)
+          <textarea id="draft" rows="7"></textarea>
+        </label>
+        <div class="row">
+          <button type="button" id="approve" class="primary">Approve locally (still not sent)</button>
+          <button type="button" id="copy">Copy draft</button>
+          <button type="button" id="save-lead">Save to leads</button>
+          <button type="button" id="export-one">Export CSV row</button>
+        </div>
+        <p id="auto-status" class="status">Draft prepared — review required; not sent</p>
+      </div>
+    </section>
+
+    <section id="view-leads" class="view" hidden>
+      <div class="panel">
+        <div class="row between">
+          <h2>Leads</h2>
+          <div class="row">
+            <select id="filter-urgency">
+              <option value="">All urgencies</option>
+              <option>CRITICAL — SAFETY</option>
+              <option>HIGH — INSPECT</option>
+              <option>HIGH</option>
+              <option>NORMAL</option>
+            </select>
+            <button type="button" id="export-all">Export all CSV</button>
+            <button type="button" id="reset-seed">Reload seed</button>
+          </div>
+        </div>
+        <div id="leads-list" class="leads-list"></div>
+      </div>
+    </section>
+
+    <section id="view-rules" class="view" hidden>
+      <div class="panel prose">
+        <h2>Urgency & extraction rules</h2>
+        <h3>CRITICAL — SAFETY (rare)</h3>
+        <ul>
+          <li>Grinding brakes <strong>and</strong> soft/spongy pedal</li>
+          <li>Can’t stop / won’t stop / no brakes</li>
+          <li>Pulling hard while braking</li>
+          <li>Brake fluid leak</li>
+          <li>Explicit don’t-drive / tow / unsafe to drive</li>
+        </ul>
+        <h3>HIGH / HIGH — INSPECT</h3>
+        <ul>
+          <li>Separated exhaust / dragging pipe / cabin fumes</li>
+          <li>Serious drivability (intermittent no-go with CEL)</li>
+          <li>Brake pad/rotor jobs or squeaks → inspect note — <strong>not</strong> CRITICAL tow language</li>
+        </ul>
+        <h3>NORMAL</h3>
+        <ul>
+          <li>Alignment, oil change, how-to questions, rebuild quotes, general noise</li>
+        </ul>
+        <h3>Draft rules</h3>
+        <ul>
+          <li>Never say “column B/C/D”</li>
+          <li>Never claim a message was sent</li>
+          <li>Always end: “This is a draft for the shop to review; it has not been sent.”</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>ShopLead AI local demo · /workspace/shoplead/app</span>
+  </footer>
+
+  <script src="js/extract.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

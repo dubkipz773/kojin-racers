@@ -1,0 +1,7 @@
+tools/venv/
+tools/resr/
+tools/resr.zip
+tools/*.pth
+**/__pycache__/
+*.pyc
+shoplead/.git/
